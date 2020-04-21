@@ -2,21 +2,16 @@
 @font-face
 
 {
-font-family: TRAHO2;
-src:url(../fonts/TRAHO2-Regular.ttf);
+    font-family: TRAHO2;
+    src:url(../fonts/TRAHO2-Regular.ttf);
 }
 
 
 /* header section */
 header{
-    
     background-image: url(../images/header-bg.png);
     background-size: cover;
-
-   /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
-
 }
-
 
 header nav {
     display: flex;
@@ -66,9 +61,7 @@ header nav img{
     width:20%;
     align-items: center;
     white-space: nowrap;
-    border-right: 1px solid grey;
-    
-    
+    border-right: 1px solid grey;  
 }
 
 .header_content .opening_times span{
@@ -81,11 +74,7 @@ header nav img{
    line-height: 18px;
    color: white;
     transform: rotate(270deg);
-    letter-spacing: 3px;
-
-
-   
-    
+    letter-spacing: 3px;  
 }
 
 .middle_container{
@@ -141,7 +130,6 @@ header nav img{
     height: 60px;
     width: 200px;
     margin-right: 20px;
-    
 }
 
 .middle_container .header_button_two{
@@ -168,14 +156,12 @@ header nav img{
     bottom: 180px;
     left:50%;
     transform: translate(-50%, -50%);
-    
 }
 
 .first_half_middle_container{
     position: absolute;
     width: 50%;
     height: 100%;
-
 }
 
 .upper_boarder_container{
@@ -185,13 +171,13 @@ header nav img{
     width:100%;
     top:100px;
 }
+
  .lower_boarder_container{
     position: relative;
     border-right: 1px solid grey;
     width: 100%;
     height: 23%;
-    top: 153px;
-    
+    top: 153px; 
  }
 
 .second_half_middle_container{
@@ -200,33 +186,174 @@ header nav img{
     height: 100%;
     border-right: 1px solid grey;
     left:50%;
-    
-    
-
 }
 
-.social_media_nav{
+.social_media_nav_container{
     position: relative;
     width:20%;
     height:100%;
     top:40%;
-    
 }
 
-.social_media_nav nav{
+.social_media_nav_container nav{
     display: flex;
     flex-direction: column;
     align-items: center;
     
-   
+  
 }
-.social_media_nav nav i{
+
+.social_media_nav_container nav a{
+    margin: 20px;
     width:30px;
     height: 30px;
-    margin:20px;
     padding:20px;
     border-radius: 50px;
     border: 1px solid grey;
     color: white;
     text-align: center;
 }
+
+/* ABOUT US Section */
+ 
+.about_us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:800px;
+}
+
+.main_about_us_container{
+    display: flex;
+    height:80%;
+    width: 80%;
+}
+
+.main_about_us_container .text_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height: 100%;
+    text-align: center;
+}
+
+.main_about_us_container .text_container h1{
+    font-family: TRAHO2;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+.main_about_us_container .text_container .line{
+    position: relative;
+    background: #E8C300;
+    border-radius: 50px;
+    width: 60px;
+    height: 5px;
+    margin: 15px auto 15px auto;
+    z-index: 1;
+}
+
+.main_about_us_container .text_container h5{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.main_about_us_container .text_container p{
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+.main_about_us_container .photo_container{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/about-img1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+.main_about_us_container .photo_container .yellow_box{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 68%;
+    top: 30%;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+/* OUR TEAM Section */
+
+.our_team_container {
+    display: flex;
+    align-items: center;
+    width:100%;
+    height: 800px;
+    background-image: url(../images/speciality2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our_team_container .image_container {
+    position: absolute;
+    width:50%;
+    background-image: url(../images/Rectangle8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+
+.our_team_container .text_container {
+    width:50%;
+   
+}
+.our_team_container .text_container h1{
+    font-family: TRAHO2;
+    font-size: 36px;
+    line-height: 48px;
+    color: white;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.our_team_container .text_container .line{
+    position: relative;
+    background: #E8C300;
+    border-radius: 50px;
+    width: 60px;
+    height: 5px;
+    margin: 15px auto 15px auto;
+    z-index: 1;
+}
+
+.our_team_container .text_container h5{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+    text-align: center;
+}
+
+.our_team_container .text_container p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
