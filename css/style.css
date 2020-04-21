@@ -30,7 +30,7 @@ header nav ul{
     line-height: 18px;
     width: 34%;
     max-height: 120px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 header nav ul li{
@@ -61,7 +61,7 @@ header nav img{
     width:20%;
     align-items: center;
     white-space: nowrap;
-    border-right: 1px solid grey;  
+    border-right: 1px solid rgba(255, 255, 255, 0.2); 
 }
 
 .header_content .opening_times span{
@@ -139,7 +139,7 @@ header nav img{
     font-size: 12px;
     line-height: 20px;
     color: white;
-    border: 1px solid gray;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
     border-radius: 5px;
     height: 60px;
@@ -150,7 +150,7 @@ header nav img{
 .middle_container i{
     position: absolute;
     color: white;
-    border: 1px solid gray;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50px;
     padding: 10px;
     bottom: 180px;
@@ -166,7 +166,7 @@ header nav img{
 
 .upper_boarder_container{
     position: relative;
-    border-right: 1px solid grey;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
     height: 60%;
     width:100%;
     top:100px;
@@ -174,7 +174,7 @@ header nav img{
 
  .lower_boarder_container{
     position: relative;
-    border-right: 1px solid grey;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
     width: 100%;
     height: 23%;
     top: 153px; 
@@ -184,7 +184,7 @@ header nav img{
     position: absolute;
     width: 50%;
     height: 100%;
-    border-right: 1px solid grey;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
     left:50%;
 }
 
@@ -209,7 +209,7 @@ header nav img{
     height: 30px;
     padding:20px;
     border-radius: 50px;
-    border: 1px solid grey;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: white;
     text-align: center;
 }
@@ -297,26 +297,65 @@ header nav img{
 /* OUR TEAM Section */
 
 .our_team_container {
-    display: flex;
-    align-items: center;
+    position: relative;
     width:100%;
-    height: 800px;
+    height: 700px;
     background-image: url(../images/speciality2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.our_team_container .image_container {
+.our_team_container .yellow_box{
     position: absolute;
-    width:50%;
+    width: 250px;
+    height: 250px;
+    left: 8%;
+    top: 35%;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 4;
+}
+
+
+.our_team_container .main_our_team_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.our_team_container h2{
+    position: absolute;
+    width: 100%;
+    margin: 60px 55% 0px 45%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.our_team_container .image_container {
+    width:38%;
+    height: 90%;
     background-image: url(../images/Rectangle8.png);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 3;
+    z-index: 1;
 }
 
 .our_team_container .text_container {
-    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:40%;
+    height: 80%;
+    
    
 }
 .our_team_container .text_container h1{
@@ -324,7 +363,7 @@ header nav img{
     font-size: 36px;
     line-height: 48px;
     color: white;
-    letter-spacing: 6px;
+    letter-spacing: 3px;
     text-align: center;
 }
 
@@ -355,5 +394,87 @@ header nav img{
     line-height: 28px;
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
+    margin-top: 20px;
 }
 
+.our_team_container .first_for_line_container{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 20%;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.our_team_container .second_for_line_container{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    top: 0px;
+    left:20%;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.our_team_container .third_for_line_container{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    top: 0px;
+    left: 50%;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.our_team_container .fourth_for_line_container{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    top: 0px;
+    left:80%;
+}
+
+/* BOOKING Section */
+
+.booking_container{
+    height: 575px;
+    width: 100%;
+}
+
+.booking_container .flex_container{
+    margin-top: 10%;
+    height: 100%;
+    display: flex;
+}
+
+.booking_container .form_container{
+    width:50%;
+}
+
+.booking_container .form_container h1{
+    font-family: TRAHO2;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.booking_container .form_container .line{
+    position: relative;
+    background: #E8C300;
+    border-radius: 50px;
+    width: 60px;
+    height: 5px;
+    margin: 15px auto 15px auto;
+    z-index: 1;
+}
+
+.booking_container .image_container{
+    width:50%;
+    height: 90%;
+    background-image: url(../images/about-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.booking_container .form_container
