@@ -61,7 +61,7 @@ header nav img{
     width:20%;
     align-items: center;
     white-space: nowrap;
-    border-right: 1px solid rgba(255, 255, 255, 0.2); 
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header_content .opening_times span{
@@ -74,7 +74,7 @@ header nav img{
    line-height: 18px;
    color: white;
     transform: rotate(270deg);
-    letter-spacing: 3px;  
+    letter-spacing: 3px;
 }
 
 .middle_container{
@@ -97,7 +97,7 @@ header nav img{
 }
 
 .middle_container h1{
-    
+
     font-family: TRAHO2;
     color: white;
     font-size: 106px;
@@ -177,7 +177,7 @@ header nav img{
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     width: 100%;
     height: 23%;
-    top: 153px; 
+    top: 153px;
  }
 
 .second_half_middle_container{
@@ -199,8 +199,8 @@ header nav img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-  
+
+
 }
 
 .social_media_nav_container nav a{
@@ -215,7 +215,7 @@ header nav img{
 }
 
 /* ABOUT US Section */
- 
+
 .about_us{
     display: flex;
     justify-content: center;
@@ -309,7 +309,7 @@ header nav img{
     position: absolute;
     width: 250px;
     height: 250px;
-    left: 8%;
+    left: 5%;
     top: 35%;
     border: 20px solid #E8C300;
     box-sizing: border-box;
@@ -341,11 +341,13 @@ header nav img{
 }
 
 .our_team_container .image_container {
+    position: relative;
+    top: 7%;
     width:38%;
     height: 90%;
     background-image: url(../images/Rectangle8.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    border-radius: 5px;
     z-index: 1;
 }
 
@@ -355,8 +357,7 @@ header nav img{
     justify-content: center;
     width:40%;
     height: 80%;
-    
-   
+    margin-left: 70px;
 }
 .our_team_container .text_container h1{
     font-family: TRAHO2;
@@ -440,13 +441,17 @@ header nav img{
 }
 
 .booking_container .flex_container{
-    margin-top: 10%;
+    margin-top: 7%;
     height: 100%;
     display: flex;
 }
 
 .booking_container .form_container{
-    width:50%;
+    position: relative;
+    width:45%;
+    text-align: center;
+    margin: auto 0;
+    left: 8%;
 }
 
 .booking_container .form_container h1{
@@ -469,12 +474,324 @@ header nav img{
 }
 
 .booking_container .image_container{
-    width:50%;
-    height: 90%;
+    position: relative;
+    left: 5%;
+    width:40%;
+    height: 100%;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
     background-image: url(../images/about-img.png);
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
-.booking_container .form_container
+.booking_container .image_container .yellow_box{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 72%;
+    top: 25%;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 4;
+}
+
+.booking_container .form_container input{
+    height:60px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    width:35%;
+    border: none;
+    margin: 5px;
+}
+
+.booking_container .form_container button{
+    background: #E8C300;
+    border-radius: 5px;
+    width:72%;
+    height: 60px;
+    border: none;
+    margin-top: 5px;
+}
+
+input[type=text]{
+    font-family: Open Sans;
+    font-style: normal;
+    color: rgba(51, 51, 51, 0.5);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    align-items: center;
+    text-indent: 20px;
+}
+
+.booking_container .footer_booking_container{
+    height: 100px;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.booking_container .footer_booking_container span{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(51, 51, 51, 0.6);
+    border-radius: 5px;
+}
+
+/* SPECIALITIES Section */
+.specialities_container {
+    position: relative;
+    width:100%;
+    height: 700px;
+    background-image: url(../images/speciality2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10%;
+}
+
+.specialities_container .yellow_box{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 5%;
+    top: 35%;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 4;
+}
+
+
+.specialities_container .main_specialities_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.specialities_container h2{
+    position: absolute;
+    width: 100%;
+    margin: 60px 55% 0px 45%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.specialities_container .image_container {
+    position: relative;
+    top: 7%;
+    width:35%;
+    height: 90%;
+    background-image: url(../images/Rectangle7.png);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    z-index: 1;
+    padding-right: 80px;
+}
+
+.specialities_container .text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:40%;
+    height: 80%;
+    margin-left: 30px;
+
+}
+.specialities_container .text_container h1{
+    font-family: TRAHO2;
+    font-size: 36px;
+    line-height: 48px;
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.specialities_container .text_container .line{
+    position: relative;
+    background: #E8C300;
+    border-radius: 50px;
+    width: 60px;
+    height: 5px;
+    margin: 15px auto 15px auto;
+    z-index: 1;
+}
+
+.specialities_container .text_container h5{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+    text-align: center;
+}
+
+.specialities_container .text_container p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.specialities_container .first_for_line_container{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 20%;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.specialities_container .second_for_line_container{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    top: 0px;
+    left:20%;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.specialities_container .third_for_line_container{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    top: 0px;
+    left: 50%;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.specialities_container .fourth_for_line_container{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    top: 0px;
+    left:80%;
+}
+
+/* MENU Section */
+
+.menu_container{
+    width: 100%;
+    height: 860px;
+}
+
+.menu_header_container{
+    margin: 60px auto;
+    width: 565px;
+
+}
+
+.menu_header_container h1{
+    font-family: TRAHO2;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.menu_header_container .line{
+    position: relative;
+    background: #E8C300;
+    border-radius: 50px;
+    width: 60px;
+    height: 5px;
+    margin: 15px auto 15px auto;
+    z-index: 1;
+}
+
+.menu_header_container h5{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.food_types_container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    height:50px;
+    
+}
+
+.food_types_container .food_item  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    height:100%;
+    width:20%;
+}
+
+.food_types_container span {
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.food_types_container .food_item:last-child {
+    border: none;
+}
+
+.main_menu_container{
+    height: 480px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu_first_column,.menu_second_column,.menu_third_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.main_menu_container .menu_item{
+    height:100px;
+   
+}
+
+.main_menu_container .menu_item h1{
+    font-family: TRAHO2;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.main_menu_container .menu_item p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(51, 51, 51, 0.6);
+    border-radius: 5px;
+}
