@@ -548,7 +548,7 @@ input[type=text]{
 .specialities_container {
     position: relative;
     width:100%;
-    height: 700px;
+    height: 800px;
     background-image: url(../images/speciality2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -685,6 +685,28 @@ input[type=text]{
     left:80%;
 }
 
+.functional_dots_container{
+    position: absolute;
+    margin: 0 auto;
+    bottom:10%;
+    width: 100px;
+
+}
+
+.functional_dots_container .dot{
+    height: 10px;
+    width: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius:50px;
+    float: left;
+}
+
+#middle_dot{
+    margin-left: 35px;
+    margin-right: 35px;
+    background-color: white;
+}
+
 /* MENU Section */
 
 .menu_container{
@@ -794,4 +816,170 @@ input[type=text]{
     line-height: 12px;
     color: rgba(51, 51, 51, 0.6);
     border-radius: 5px;
+}
+
+/* PRIVATE EVENTS Section */
+
+.events_container {
+    position: relative;
+    width:100%;
+    height: 800px;
+    background-image: url(../images/speciality.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10%;
+}
+
+.events_container h2 {
+        position: absolute;
+        width: 100%;
+        margin: 60px 58% 0px 42%;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        color: white;
+        letter-spacing: 10px;
+}
+
+.events_container .main_events_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.events_container .yellow_box_one{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 5%;
+    top: 35%;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 4;
+}
+.events_container .yellow_box_two{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    right: 3%;
+    top: 35%;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 4;
+}
+
+
+
+.events_container .left_image_container{
+    background-image: url(../images/Rectangle6.png);
+    position: relative;
+    top: 7%;
+    width:35%;
+    height: 80%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    z-index: 1;
+    margin-right: 55px;
+}
+
+.events_container .left_image_container .left_side_text_container{
+    position: relative;
+    float: right;
+    top:50px;
+    left:3%;
+    height:475px;
+    width: 15%;
+    background: #000000;
+    border-radius: 0px 5px 5px 0px;
+    text-align: center;
+}
+
+.events_container .left_image_container .left_side_text_container span{
+    font-family: TRAHO2;
+    font-size: 24px;
+    line-height: 12px;
+    color: white;
+    writing-mode: vertical-rl;
+    padding-top: 55px;
+    letter-spacing: 1px;
+    
+}
+
+.events_container .right_image_container{
+    background-image: url(../images/Rectangle5.png);
+    position: relative;
+    top: 7%;
+    width:37%;
+    height: 80%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    z-index: 1;
+    margin-left: 55px;
+    
+}
+
+.events_container .right_image_container .right_side_text_container{
+    position: relative;
+    float: left;
+    top:50px;
+    left:3%;
+    height:475px;
+    width: 15%;
+    background: #000000;
+    border-radius: 0px 5px 5px 0px;
+    transform: rotate(180deg);
+    text-align: center;
+}
+
+.events_container .right_image_container .right_side_text_container span{
+    font-family: TRAHO2;
+    font-size: 24px;
+    line-height: 12px;
+    color: white;
+    writing-mode: vertical-rl;
+    padding-top: 30px;
+    letter-spacing: 1px;
+}
+
+.events_container .first_for_line_container{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 20%;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.events_container .second_for_line_container{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    top: 0px;
+    left:20%;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.events_container .third_for_line_container{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    top: 0px;
+    left: 50%;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.events_container .fourth_for_line_container{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    top: 0px;
+    left:80%;
 }
