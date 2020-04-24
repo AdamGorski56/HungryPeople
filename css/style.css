@@ -1,7 +1,5 @@
 
-body{
-    overflow-x: hidden;
-}
+
 @font-face
 
 {
@@ -339,8 +337,8 @@ header nav img{
 
 .our_team_container h2{
     position: absolute;
-    width: 100%;
-    margin: 60px 55% 0px 45%;
+    width:232px;
+    margin: 60px 50% 0px 50%;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
@@ -348,6 +346,8 @@ header nav img{
     line-height: 14px;
     color: white;
     letter-spacing: 10px;
+    transform: translate(-45%);
+    text-align: center;
 }
 
 .our_team_container .image_container {
@@ -527,7 +527,16 @@ header nav img{
     margin-top: 5px;
 }
 
-input[type=text]{
+.booking_container .form_container button span{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+}
+
+.booking_container input[type=text]{
     font-family: Open Sans;
     font-style: normal;
     color: rgba(51, 51, 51, 0.5);
@@ -587,16 +596,18 @@ input[type=text]{
 }
 
 .specialities_container h2{
-    position: absolute;
-    width: 100%;
-    margin: 60px 55% 0px 45%;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-    color: white;
-    letter-spacing: 10px;
+        position: absolute;
+        width:232px;
+        margin: 60px 50% 0px 50%;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        color: white;
+        letter-spacing: 10px;
+        transform: translate(-50%);
+        text-align: center;
 }
 
 .specialities_container .image_container {
@@ -699,7 +710,6 @@ input[type=text]{
     margin: 0 auto;
     bottom:10%;
     width: 100px;
-
 }
 
 .functional_dots_container .dot{
@@ -763,7 +773,6 @@ input[type=text]{
     width: 60%;
     margin: 0 auto;
     height:50px;
-
 }
 
 .food_types_container .food_item  {
@@ -807,7 +816,6 @@ input[type=text]{
 
 .main_menu_container .menu_item{
     height:100px;
-
 }
 
 .main_menu_container .menu_item h1{
@@ -851,7 +859,6 @@ input[type=text]{
         color: white;
         letter-spacing: 10px;
         transform: translate(-50%);
-       
 }
 
 .events_container .main_events_container{
@@ -899,7 +906,6 @@ input[type=text]{
     background-repeat: no-repeat;
     border-radius: 5px;
     z-index: 1;
-    
 }
 
 .events_container .left_image_container .left_side_text_container{
@@ -932,7 +938,6 @@ input[type=text]{
     border-radius: 5px;
     z-index: 1;
     margin-left: 55px;
-
 }
 
 .events_container .right_image_container .right_side_text_container{
@@ -1018,7 +1023,6 @@ input[type=text]{
 }
 .galerry_container #image_one {
     background-image: url(../images/Rectangle3.png);
- 
 }
 
 .galerry_container #image_two {
@@ -1031,4 +1035,155 @@ input[type=text]{
 
 .galerry_container #image_four {
     background-image: url(../images/Rectangle4.png);
+}
+
+/* CONTACT Section */
+
+.contact_container{
+height: 675px;
+
+}
+
+.contact_container .text_container{
+width: 565px;
+margin: 100px auto 60px auto;
+
+}
+
+.contact_container h1{
+    font-family: TRAHO2;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.contact_container .line{
+    position: relative;
+    background: #E8C300;
+    border-radius: 50px;
+    width: 60px;
+    height: 5px;
+    margin: 15px auto 15px auto;
+    z-index: 1;
+}
+
+.contact_container h5{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.contact_container .form_container{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+}
+
+.contact_container .form_container form{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.contact_container .form_container input{
+    height:60px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    width:30%;
+    border: none;
+    margin: 5px;
+}
+
+.contact_container .form_container input[placeholder=Message] {
+    height:120px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    width:92%;
+    border: none;
+    margin:0;
+    margin: 5px;
+}
+
+.contact_container .form_container .info_and_button_container{
+    position: relative;
+    width:92%;
+    height:60px;
+    margin: 0 auto;
+    top:5px;
+}
+
+.contact_container .form_container .info_and_button_container span{
+    position: relative;
+    float: left;
+    width:16.6%;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.contact_container .form_container .info_and_button_container i {
+    color:#E8C300;
+    text-align: center;
+}
+
+
+
+.contact_container .form_container button{
+    background: #E8C300;
+    border-radius: 5px;
+    width:50%;
+    height: 60px;
+    border: none;
+    float: right;
+    text-align: center;
+}
+
+.contact_container .form_container button p{
+    color: white;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.contact_container input[type=text],.contact_container input[type=email],.contact_container input[type=tel]{
+    font-family: Open Sans;
+    font-style: normal;
+    color: rgba(51, 51, 51, 0.5);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    align-items: center;
+    text-indent: 20px;
+}
+
+.map_container{
+    position: relative;
+    height:550px;
+    background-image: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    height:100px;
+}
+
+footer span{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.7);
 }
