@@ -1,4 +1,7 @@
 
+body{
+    overflow-x: hidden;
+}
 @font-face
 
 {
@@ -226,6 +229,8 @@ header nav img{
 
 .main_about_us_container{
     display: flex;
+    align-items: center;
+    justify-content: center;
     height:80%;
     width: 80%;
 }
@@ -238,6 +243,7 @@ header nav img{
     width:50%;
     height: 100%;
     text-align: center;
+    margin-right: 200px;
 }
 
 .main_about_us_container .text_container h1{
@@ -272,26 +278,29 @@ header nav img{
     margin-top: 20px;
 }
 
-.main_about_us_container .photo_container{
+.main_about_us_container .image_container{
     position: relative;
-    width: 50%;
-    height: 100%;
-    background-image: url(../images/about-img1.png);
+    width: 475px;
+    height: 475px;
+    background-image: url(../images/about-img1Fixed.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: cover;
+    right:100px;
 }
 
-.main_about_us_container .photo_container .yellow_box{
+.main_about_us_container .image_container .yellow_box{
     position: absolute;
     width: 250px;
     height: 250px;
-    left: 68%;
-    top: 30%;
     border: 20px solid #E8C300;
+    top:50%;
+    transform: translateY(-50%);
+    left:72%;
     box-sizing: border-box;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    z-index: 4;
 }
 
 /* OUR TEAM Section */
@@ -309,9 +318,10 @@ header nav img{
     position: absolute;
     width: 250px;
     height: 250px;
-    left: 5%;
-    top: 35%;
     border: 20px solid #E8C300;
+    top:50%;
+    transform: translateY(-50%);
+    right:72%;
     box-sizing: border-box;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -342,10 +352,9 @@ header nav img{
 
 .our_team_container .image_container {
     position: relative;
-    top: 7%;
-    width:38%;
-    height: 90%;
-    background-image: url(../images/Rectangle8.png);
+    width:475px;
+    height: 475px;
+    background-image: url(../images/Rectangle8fixed.png);
     background-repeat: no-repeat;
     border-radius: 5px;
     z-index: 1;
@@ -357,7 +366,7 @@ header nav img{
     justify-content: center;
     width:40%;
     height: 80%;
-    margin-left: 70px;
+    margin-left: 200px;
 }
 .our_team_container .text_container h1{
     font-family: TRAHO2;
@@ -436,22 +445,22 @@ header nav img{
 /* BOOKING Section */
 
 .booking_container{
-    height: 575px;
+    height: 650px;
     width: 100%;
 }
 
 .booking_container .flex_container{
-    margin-top: 7%;
     height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .booking_container .form_container{
     position: relative;
-    width:45%;
+    width:50%;
     text-align: center;
-    margin: auto 0;
-    left: 8%;
+    margin-right: 200px;
 }
 
 .booking_container .form_container h1{
@@ -475,12 +484,12 @@ header nav img{
 
 .booking_container .image_container{
     position: relative;
-    left: 5%;
-    width:40%;
-    height: 100%;
+    width:475px;
+    height: 475px;
+    right: 200px;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    background-image: url(../images/about-img.png);
+    background-image: url(../images/about-imgFixed.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -490,9 +499,10 @@ header nav img{
     position: absolute;
     width: 250px;
     height: 250px;
-    left: 72%;
-    top: 25%;
     border: 20px solid #E8C300;
+    top:50%;
+    transform: translateY(-50%);
+    left:72%;
     box-sizing: border-box;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -529,9 +539,7 @@ input[type=text]{
 }
 
 .booking_container .footer_booking_container{
-    height: 100px;
     text-align: center;
-    margin-top: 4%;
 }
 
 .booking_container .footer_booking_container span{
@@ -549,19 +557,20 @@ input[type=text]{
     position: relative;
     width:100%;
     height: 800px;
-    background-image: url(../images/speciality2.png);
+    background-image: url(../images/speciality.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .specialities_container .yellow_box{
     position: absolute;
     width: 250px;
     height: 250px;
-    left: 5%;
-    top: 35%;
     border: 20px solid #E8C300;
+    top:50%;
+    transform: translateY(-50%);
+    right:72%;
     box-sizing: border-box;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -592,14 +601,14 @@ input[type=text]{
 
 .specialities_container .image_container {
     position: relative;
-    top: 7%;
-    width:35%;
-    height: 90%;
-    background-image: url(../images/Rectangle7.png);
+    width:475px;
+    height: 475px;
+    left:70px;
+    background-image: url(../images/Rectangle7fixed.png);
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
     z-index: 1;
-    padding-right: 80px;
 }
 
 .specialities_container .text_container {
@@ -608,7 +617,7 @@ input[type=text]{
     justify-content: center;
     width:40%;
     height: 80%;
-    margin-left: 30px;
+    margin-left: 200px;
 
 }
 .specialities_container .text_container h1{
@@ -754,7 +763,7 @@ input[type=text]{
     width: 60%;
     margin: 0 auto;
     height:50px;
-    
+
 }
 
 .food_types_container .food_item  {
@@ -767,7 +776,7 @@ input[type=text]{
 }
 
 .food_types_container span {
-    
+
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
@@ -798,7 +807,7 @@ input[type=text]{
 
 .main_menu_container .menu_item{
     height:100px;
-   
+
 }
 
 .main_menu_container .menu_item h1{
@@ -832,8 +841,8 @@ input[type=text]{
 
 .events_container h2 {
         position: absolute;
-        width: 100%;
-        margin: 60px 58% 0px 42%;
+        width:232px;
+        margin: 60px 50% 0px 50%;
         font-family: Open Sans;
         font-style: normal;
         font-weight: bold;
@@ -841,6 +850,8 @@ input[type=text]{
         line-height: 14px;
         color: white;
         letter-spacing: 10px;
+        transform: translate(-50%);
+       
 }
 
 .events_container .main_events_container{
@@ -855,9 +866,10 @@ input[type=text]{
     position: absolute;
     width: 250px;
     height: 250px;
-    left: 5%;
-    top: 35%;
     border: 20px solid #E8C300;
+    top:50%;
+    transform: translateY(-50%);
+    right:72%;
     box-sizing: border-box;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -867,8 +879,9 @@ input[type=text]{
     position: absolute;
     width: 250px;
     height: 250px;
-    right: 3%;
-    top: 35%;
+    top:50%;
+    transform: translateY(-50%);
+    left:72%;
     border: 20px solid #E8C300;
     box-sizing: border-box;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
@@ -879,24 +892,21 @@ input[type=text]{
 
 
 .events_container .left_image_container{
-    background-image: url(../images/Rectangle6.png);
+    background-image: url(../images/Rectangle6fixed.png);
     position: relative;
-    top: 7%;
-    width:35%;
-    height: 80%;
+    width:475px;
+    right:3%;
     background-repeat: no-repeat;
     border-radius: 5px;
     z-index: 1;
-    margin-right: 55px;
+    
 }
 
 .events_container .left_image_container .left_side_text_container{
     position: relative;
     float: right;
-    top:50px;
-    left:3%;
     height:475px;
-    width: 15%;
+    width: 10%;
     background: #000000;
     border-radius: 0px 5px 5px 0px;
     text-align: center;
@@ -908,31 +918,28 @@ input[type=text]{
     line-height: 12px;
     color: white;
     writing-mode: vertical-rl;
-    padding-top: 55px;
+    padding-top: 30px;
     letter-spacing: 1px;
-    
+
 }
 
 .events_container .right_image_container{
-    background-image: url(../images/Rectangle5.png);
+    background-image: url(../images/Rectangle5fixed.png);
     position: relative;
-    top: 7%;
-    width:37%;
-    height: 80%;
+    width:475px;
+    left:3%;
     background-repeat: no-repeat;
     border-radius: 5px;
     z-index: 1;
     margin-left: 55px;
-    
+
 }
 
 .events_container .right_image_container .right_side_text_container{
     position: relative;
     float: left;
-    top:50px;
-    left:3%;
     height:475px;
-    width: 15%;
+    width: 10%;
     background: #000000;
     border-radius: 0px 5px 5px 0px;
     transform: rotate(180deg);
@@ -982,4 +989,46 @@ input[type=text]{
     width: 20%;
     top: 0px;
     left:80%;
+}
+
+.events_container .footer_events_container{
+    position: absolute;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* GALERRY Section */
+
+.galerry_container{
+    display: flex;
+}
+
+.galerry_container .image_container{
+    width: 25%;
+    height: 475px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galerry_container #image_one {
+    background-image: url(../images/Rectangle3.png);
+ 
+}
+
+.galerry_container #image_two {
+    background-image: url(../images/Rectangle2.png);
+}
+
+.galerry_container #image_three {
+    background-image: url(../images/Rectangle1.png);
+}
+
+.galerry_container #image_four {
+    background-image: url(../images/Rectangle4.png);
 }
