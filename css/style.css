@@ -1159,6 +1159,113 @@ header nav ul li{
     background-color: white;
 }
 
+@media only screen and (max-width:1330px){
+
+    .specialities_container .image_container {
+        background-size: cover;
+        width:375px;
+        height: 375px;
+    }
+    
+    .specialities_container .text_container {
+        margin-left: 150px;
+    }
+
+    .specialities_container .yellow_box{
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media only screen and (max-width:1200px){
+
+    .specialities_container .yellow_box{
+        
+        width: 170px;
+        height: 170px;
+      
+    }
+}
+
+@media only screen and (max-width:970px){
+    .specialities_container {
+        height: 900px;
+    }
+
+    .specialities_container .main_specialities_container{
+        flex-direction: column-reverse; 
+
+    }
+
+    .specialities_container h2{
+        margin-top: 30px;
+    }
+
+    .specialities_container .image_container {
+        width:375px;
+        height: 375px;
+        left:0%; 
+        bottom: 5%;
+    }
+    
+    .specialities_container .text_container {
+        width:80%;
+        height: 40%;
+        margin-left: 0px;
+        padding-top: 0px;
+        margin-bottom:50px;
+    }
+
+    .functional_dots_container{
+
+    bottom:5%;
+
+    }
+
+}
+@media only screen and (max-width:550px){
+
+    .specialities_container .yellow_box{
+     display: none;
+      
+    }
+
+    .specialities_container .image_container {
+        width:325px;
+        height: 325px;
+        bottom:2%
+    }
+
+    .functional_dots_container{
+
+        bottom:7%;
+        
+        }
+
+}
+
+@media only screen and (max-width:450px){
+
+    .specialities_container .image_container {
+        width:250px;
+        height: 250px;
+        top:10px;
+    }
+
+}
+
+@media only screen and (max-width:370px){
+
+    .specialities_container .image_container {
+        width:180px;
+        height: 180px;
+        bottom:0;
+        top:50px;
+    }
+
+}
+
 /* MENU Section */
 
 .menu_container{
