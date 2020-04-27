@@ -1798,6 +1798,7 @@ header nav img{
             height: 150px;
             border: 15px solid #E8C300;
         }
+    }
 
         @media only screen and (max-width:480px){
 
@@ -1826,17 +1827,29 @@ header nav img{
                 height:275px;
             }
 
-    }
+        }
 
 
 /* GALERRY Section */
 
 .galerry_container{
     display: flex;
+    overflow-wrap: normal;
 }
 
+.galerry_container .first_image_container{
+    display: flex;
+    width: 50%;
+}
+
+.galerry_container .second_image_container{
+    display: flex;
+    width: 50%;
+}
+
+
 .galerry_container .image_container{
-    width: 25%;
+    width: 475px;
     height: 475px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1855,6 +1868,81 @@ header nav img{
 
 .galerry_container #image_four {
     background-image: url(../images/Rectangle4.png);
+}
+
+@media only screen and (max-width:1600px){
+    
+
+    .galerry_container .image_container{
+        height: 400px;
+    }
+
+}
+@media only screen and (max-width:1400px){
+    
+    .galerry_container .image_container{
+        height: 350px;
+    }
+
+}
+@media only screen and (max-width:1200px){
+    
+    .galerry_container .image_container{
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width:950px){
+
+    .galerry_container{
+        flex-direction: column;
+    }
+    
+    .galerry_container .image_container{
+        height: 475px;
+    }
+
+    .galerry_container .first_image_container,.galerry_container .second_image_container{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width:800px){
+
+    .galerry_container .image_container{
+        height: 400px;
+    }
+
+}
+
+@media only screen and (max-width:700px){
+    
+    .galerry_container .image_container{
+        height: 350px;
+    }
+
+}
+
+@media only screen and (max-width:550px){
+    
+    .galerry_container .image_container{
+        height: 275px;
+    }
+
+}
+@media only screen and (max-width:475px){
+    
+    .galerry_container .image_container{
+        height: 475px;
+        width: 100%;
+    }
+
+    .galerry_container .first_image_container,.galerry_container .second_image_container{
+        flex-direction: column;
+    }
+
 }
 
 /* CONTACT Section */
