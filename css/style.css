@@ -1,4 +1,8 @@
 
+html{
+    scroll-behavior: smooth;
+  }
+
 @font-face
 
 {
@@ -202,6 +206,14 @@ header nav img{
     width: 200px;
     margin-right: 20px;
     z-index: 100;
+    transition: 0.2s ease-in-out;
+    
+}
+.middle_container .header_button_one:hover{
+   
+    color:black;
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .middle_container .header_button_two{
@@ -218,6 +230,14 @@ header nav img{
     height: 60px;
     width: 200px;
     margin-left: 20px;
+    transition: 0.2s ease-in-out;
+
+}
+
+.middle_container .header_button_two:hover{
+   
+    cursor: pointer;
+    transform: scale(1.2);
 
 }
 
@@ -521,7 +541,7 @@ header nav img{
     position: relative;
     width: 475px;
     height: 475px;
-    background-image: url(../images/about-img1Fixed.png);
+    background-image: url(../images/wood.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -605,7 +625,7 @@ header nav img{
     position: relative;
     width:100%;
     height: 700px;
-    background-image: url(../images/speciality2.png);
+    background-image: url(../images/background_img_two.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -880,7 +900,7 @@ header nav img{
     right: 200px;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    background-image: url(../images/about-imgFixed.png);
+    background-image: url(../images/clock.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -1066,7 +1086,7 @@ header nav img{
     position: relative;
     width:100%;
     height: 800px;
-    background-image: url(../images/speciality.png);
+    background-image: url(../images/background_img_one.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 5%;
@@ -1114,7 +1134,7 @@ header nav img{
     width:475px;
     height: 475px;
     left:70px;
-    background-image: url(../images/Rectangle7fixed.png);
+    background-image: url(../images/special_one.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -1565,7 +1585,7 @@ header nav img{
     position: relative;
     width:100%;
     height: 800px;
-    background-image: url(../images/speciality.png);
+    background-image: url(../images/background_img_one.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 10%;
@@ -1622,7 +1642,7 @@ header nav img{
 }
 
 .events_container .left_image_container{
-    background-image: url(../images/Rectangle6fixed.png);
+    background-image: url(../images/weddings.png);
     position: relative;
     width:475px;
     right:3%;
@@ -1653,7 +1673,7 @@ header nav img{
 }
 
 .events_container .right_image_container{
-    background-image: url(../images/Rectangle5fixed.png);
+    background-image: url(../images/parties.png);
     position: relative;
     width:475px;
     left:3%;
@@ -1877,19 +1897,19 @@ header nav img{
 }
 
 .galerry_container #image_one {
-    background-image: url(../images/Rectangle3.png);
+    background-image: url(../images/galerry_one.png);
 }
 
 .galerry_container #image_two {
-    background-image: url(../images/Rectangle2.png);
+    background-image: url(../images/galerry_two.png);
 }
 
 .galerry_container #image_three {
-    background-image: url(../images/Rectangle1.png);
+    background-image: url(../images/galerry_three.png);
 }
 
 .galerry_container #image_four {
-    background-image: url(../images/Rectangle4.png);
+    background-image: url(../images/galerry_four.png);
 }
 
 @media only screen and (max-width:1600px){
